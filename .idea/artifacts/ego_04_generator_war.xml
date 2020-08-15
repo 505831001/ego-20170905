@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ego-04-generator:war">
+    <output-path>$PROJECT_DIR$/ego-parent/ego-04-generator/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ego-04-generator</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ego-04-generator.war">
+      <element id="artifact" artifact-name="ego-04-generator:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ego-parent/ego-01-dao/ego-01-dao.iml" filepath="$PROJECT_DIR$/ego-parent/ego-01-dao/ego-01-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-parent/ego-02-service/ego-02-service.iml" filepath="$PROJECT_DIR$/ego-parent/ego-02-service/ego-02-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-parent/ego-03-web/ego-03-web.iml" filepath="$PROJECT_DIR$/ego-parent/ego-03-web/ego-03-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-parent/ego-04-generator/ego-04-generator.iml" filepath="$PROJECT_DIR$/ego-parent/ego-04-generator/ego-04-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-parent/ego-parent.iml" filepath="$PROJECT_DIR$/ego-parent/ego-parent.iml" />
+    </modules>
+  </component>
+</project>
