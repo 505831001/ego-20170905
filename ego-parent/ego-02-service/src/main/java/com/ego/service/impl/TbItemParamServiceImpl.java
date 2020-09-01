@@ -6,8 +6,10 @@ import com.ego.entity.TbItemParamPlus;
 import com.ego.mapper.TbItemCatMapper;
 import com.ego.mapper.TbItemParamMapper;
 import com.ego.service.TbItemParamService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.util.LinkedList;
@@ -21,38 +23,40 @@ import java.util.List;
  * @author liuweiwei
  * @since 2020-05-19
  */
-@Service
+@Component
 public class TbItemParamServiceImpl implements TbItemParamService {
+    /**
+     * SLF4J 狂人必备日志技能
+     */
+    protected static final Logger LOGGER = LoggerFactory.getLogger(TbItemServiceImpl.class);
 
     @Autowired
-    private TbItemParamMapper tbItemParamMapper;
-    @Autowired
-    private TbItemCatMapper tbItemCatMapper;
+    protected TbItemParamMapper tbItemParamMapper;
 
-    private EasyUIPageVO easyUIPageVO;
+    @Autowired
+    protected TbItemCatMapper tbItemCatMapper;
+
+    protected EasyUIPageVO easyUIPageVO;
+
+    @Override
+    public List<TbItemParam> query() {
+        List<TbItemParam> data = tbItemParamMapper.selectAll();
+        return data;
+    }
 
     @Override
     public EasyUIPageVO list(int pageNum, int pageSize) {
         EasyUIPageVO easyUIPageVO = new EasyUIPageVO();
-        List<TbItemParamPlus> plusList = new LinkedList<>();
-        List<TbItemParam> itemParamList = new LinkedList<>();
-        if (CollectionUtils.isEmpty(itemParamList)) {
-            itemParamList = (List<TbItemParam>) this.easyUIPageVO.getRows();
-        }
-        for (TbItemParam po : itemParamList) {
-            TbItemParamPlus vo = new TbItemParamPlus();
-            vo.setId(po.getId());
-            vo.setItemCatId(po.getItemCatId());
-            vo.setParamData(po.getParamData());
-            vo.setCreated(po.getCreated());
-            vo.setUpdated(po.getUpdated());
-            String itemCatName = tbItemCatMapper.selectByPrimaryKey(po.getItemCatId()).getName();
-            vo.setItemCatName(itemCatName);
-            System.out.println("TbItemParamPlus ->" + vo.toString());
-            plusList.add(vo);
-        }
-        System.out.println("plusList ->" + plusList.toString());
-        easyUIPageVO.setRows(plusList);
+        /**
+         * 数据集
+         */
+        List<TbItemParam> rows = tbItemParamMapper.selectItemPageList(pageNum, pageSize);
+        easyUIPageVO.setRows(rows);
+        /**
+         * 总条数
+         */
+        long count = tbItemParamMapper.count();
+        easyUIPageVO.setTotal(Integer.parseInt(String.valueOf(count)));
         return easyUIPageVO;
     }
 }

@@ -17,7 +17,7 @@ import java.util.List;
 @ContextConfiguration(locations = {"classpath:spring-service.xml"})
 public class TbUserServiceTest {
 
-    private ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:spring-service.xml");
+    private ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:spring-service.xml");
 
     @Test
     public void springConnectDBTest() {
@@ -49,8 +49,8 @@ public class TbUserServiceTest {
     private TbUserService tbUserService;
 
     @Test
-    public void getPageTbUserTest() {
-        int pageNum = 0;
+    public void getPageTbUser() {
+        int pageNum  = 0;
         int pageSize = 4;
         PageInfo<TbUser> pageInfo = tbUserService.getPageTbUser(pageNum, pageSize);
         System.out.println(pageInfo);

@@ -7,10 +7,14 @@ import com.ego.service.TbItemService;
 import com.ego.utils.IDUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -23,11 +27,13 @@ import java.util.List;
  */
 @Service
 public class TbItemServiceImpl implements TbItemService {
+    /**
+     * SLF4J 狂人必备日志技能
+     */
+    protected static final Logger LOGGER = LoggerFactory.getLogger(TbItemServiceImpl.class);
 
     @Autowired
-    private TbItemMapper tbItemMapper;
-
-    private TbItem item;
+    protected TbItemMapper tbItemMapper;
 
     /**
      * 分页查询物料列表
@@ -70,11 +76,13 @@ public class TbItemServiceImpl implements TbItemService {
      * @return
      */
     @Override
-    public Integer reshelf(String ids) {
+    public Integer reshelf(String ids) throws Exception {
+        List<Integer> list = new LinkedList<>();
         int index = 0;
         String[] idArray = ids.split(",");
         for (String id : idArray) {
-            index = tbItemMapper.reshelf(Long.parseLong(id));
+            index += tbItemMapper.reshelf(Long.parseLong(id));
+            list.add(index);
         }
         return index;
     }
@@ -86,16 +94,16 @@ public class TbItemServiceImpl implements TbItemService {
      * @return
      */
     @Override
-    public Integer instock(String ids) {
+    public Integer instock(String ids) throws Exception {
         String[] idArray = ids.split(",");
         int index = 0;
         for (String id : idArray) {
-            item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
-            System.out.println("查询物料状态B：" + item.getStatus());
+            TbItem item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
+            System.out.println("Before querying the database -> " + item.getStatus());
             item.setId(Long.parseLong(id));
             index += tbItemMapper.instock(item);
             item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
-            System.out.println("修改物料状态B：" + item.getStatus());
+            System.out.println("After querying the database -> " + item.getStatus());
         }
         return index;
     }
@@ -107,17 +115,16 @@ public class TbItemServiceImpl implements TbItemService {
      * @return
      */
     @Override
-    public Integer delete(String ids) {
+    @Transactional(rollbackFor = Exception.class)
+    public Integer delete(String ids) throws Exception {
         String[] idArray = ids.split(",");
         int index = 0;
         for (String id : idArray) {
-            item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
-            System.out.println("查询物料状态C：" + item.getStatus());
+            TbItem item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
             item.setId(Long.parseLong(id));
             index += tbItemMapper.delete(item);
-            item = tbItemMapper.selectByPrimaryKey(Long.parseLong(id));
-            System.out.println("修改物料状态C：" + item.getStatus());
         }
+        LOGGER.info("The total number of batch deletions is -> index: {}" + index);
         return index;
     }
 
@@ -129,7 +136,9 @@ public class TbItemServiceImpl implements TbItemService {
      * @return
      */
     @Override
-    public Integer save(TbItem tbItem, String desc) {
+    @Transactional(rollbackFor = Exception.class)
+    public Integer save(TbItem tbItem, String desc) throws Exception {
+        int index = 0;
         long id = IDUtils.genItemId();
 
         TbItemDesc itemDesc = new TbItemDesc();
@@ -141,7 +150,7 @@ public class TbItemServiceImpl implements TbItemService {
         tbItem.setCreated(new Date());
         tbItem.setUpdated(new Date());
         tbItem.setStatus(Byte.parseByte("1"));
-        int insert = tbItemMapper.insert(tbItem);
-        return insert;
+        index += tbItemMapper.insert(tbItem);
+        return index;
     }
 }

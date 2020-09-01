@@ -7,6 +7,10 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+/**
+ * @author liuweiwei
+ * @since 2020-08-31
+ */
 @Mapper
 public interface TbItemMapper {
     long countByExample(TbItem example);
@@ -15,7 +19,7 @@ public interface TbItemMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(TbItem record);
+    int insert(TbItem record) throws Exception;
 
     int insertSelective(TbItem record);
 
@@ -33,11 +37,11 @@ public interface TbItemMapper {
 
     int updateByPrimaryKeySelective(TbItem record);
 
-    int instock(@Param("item") TbItem record);
+    int instock(@Param("item") TbItem record) throws Exception;
 
-    int reshelf(@Param("id") Long id);
+    int reshelf(@Param("id") Long id) throws Exception;
 
-    int delete(@Param("item") TbItem record);
+    int delete(@Param("item") TbItem record) throws Exception;
 
     long count();
 }

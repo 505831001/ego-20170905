@@ -14,5 +14,6 @@ import java.util.List;
  * @since 2020-05-19
  */
 public interface TbItemParamService {
+    public List<TbItemParam> query();
     public EasyUIPageVO list(int pageNum, int pageSize);
 }

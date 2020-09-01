@@ -5,6 +5,8 @@ import com.ego.service.TbItemService;
 import com.github.pagehelper.PageInfo;
 import com.mangofactory.swagger.annotations.ApiIgnore;
 import io.swagger.annotations.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,14 +16,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
-@Api(tags = "物料管理相关接口", value = "TbItemController")
+/**
+ * @author liuweiwei
+ * @since 2020-8-15
+ */
+@Api(tags = "物料管理相关接口", description = "TbItemController")
 @Controller
 public class TbItemController {
 
-    @Autowired
-    private TbItemService tbItemService;
+    protected final Logger LOGGER = LoggerFactory.getLogger(TbItemController.class);
 
-    // http://localhost:8080/item/list?page=1&rows=30
+    @Autowired
+    protected TbItemService tbItemService;
+
+    // http://localhost:8848/item/list?page=1&rows=30
     @RequestMapping(value = "/item/list")
     @ResponseBody
     @ApiOperation(notes = "物料列表", value = "分页查询物料列表")
@@ -55,7 +63,13 @@ public class TbItemController {
     @RequestMapping(value = "/rest/item/reshelf")
     @ResponseBody
     public Integer reshelf(@RequestParam(value = "ids") String ids) {
-        int status = tbItemService.reshelf(ids);
+        int status = 0;
+        try {
+            status = tbItemService.reshelf(ids);
+        } catch (Exception e) {
+            LOGGER.info("在控制器层捕获异常Consumer端，Dubbo RPC服务在Provider端抛出异常。" + e.getLocalizedMessage());
+            e.printStackTrace();
+        }
         return status;
     }
 
@@ -64,7 +78,13 @@ public class TbItemController {
     @RequestMapping(value = "/rest/item/instock")
     @ResponseBody
     public Integer instock(@RequestParam(value = "ids") String ids) {
-        int status = tbItemService.instock(ids);
+        int status = 0;
+        try {
+            status = tbItemService.instock(ids);
+        } catch (Exception e) {
+            LOGGER.info("在控制器层捕获异常Consumer端，Dubbo RPC服务在Provider端抛出异常。" + e.getLocalizedMessage());
+            e.printStackTrace();
+        }
         return status;
     }
 
@@ -73,11 +93,15 @@ public class TbItemController {
     @RequestMapping(value = "/rest/item/delete")
     @ResponseBody
     public Integer delete(@RequestParam(value = "ids") String ids) {
-        int status = tbItemService.delete(ids);
+        int status = 0;
+        try {
+            status = tbItemService.delete(ids);
+        } catch (Exception e) {
+            LOGGER.info("在控制器层捕获异常Consumer端，Dubbo RPC服务在Provider端抛出异常。" + e.getLocalizedMessage());
+            e.printStackTrace();
+        }
         return status;
     }
-
-    // http://localhost:8080/item/save
 
     /**
      * cid: 1
@@ -91,12 +115,17 @@ public class TbItemController {
      * desc: 商品描述01
      * itemParams: []
      */
-    @ApiOperation(value = "新增物料", notes = "商品:cid,title,sellPoint,priceView,price,num,barcode,image,desc,itemParams")
+    // http://localhost:8848/item/save
     @RequestMapping(value = "/item/save")
-    @ResponseBody
-    public Integer save(@RequestBody TbItem item, String desc) {
-        TbItem tbItem = new TbItem();
-        int status = tbItemService.save(item, desc);
+    @ApiOperation(value = "新增物料", notes = "商品:cid,title,sellPoint,priceView,price,num,barcode,image,desc,itemParams")
+    public Integer save(@RequestBody TbItem item,@RequestParam String desc) {
+        int status = 0;
+        try {
+            status = tbItemService.save(item, desc);
+        } catch (Exception e) {
+            LOGGER.info("在控制器层捕获异常Consumer端，Dubbo RPC服务在Provider端抛出异常。" + e.getLocalizedMessage());
+            e.printStackTrace();
+        }
         return status;
     }
 }

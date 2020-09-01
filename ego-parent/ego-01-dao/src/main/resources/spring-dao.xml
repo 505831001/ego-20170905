@@ -31,5 +31,4 @@
         <property name="basePackage" value="com.ego.mapper"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSession"></property>
     </bean>
-
 </beans>

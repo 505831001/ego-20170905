@@ -13,7 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@Api(tags = "用户管理相关接口", value = "TbUserController")
+/**
+ * @author liuweiwei
+ * @since 2020-8-15
+ */
+@Api(tags = "用户管理相关接口", description = "TbUserController")
 @RequestMapping(value = "/user")
 @Controller
 public class TbUserController {

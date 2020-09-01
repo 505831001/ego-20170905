@@ -16,7 +16,11 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.Map;
 
-@Api(tags = "文件相关接口", value = "PicController")
+/**
+ * @author liuweiwei
+ * @since 2020-8-15
+ */
+@Api(tags = "文件相关接口", description = "PicController")
 @Controller
 public class PicController {
 

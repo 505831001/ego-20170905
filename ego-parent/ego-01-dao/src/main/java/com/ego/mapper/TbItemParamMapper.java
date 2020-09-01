@@ -38,4 +38,8 @@ public interface TbItemParamMapper {
     int updateByPrimaryKeyWithBLOBs(TbItemParam record);
 
     int updateByPrimaryKey(TbItemParam record);
+
+    List<TbItemParam> selectAll();
+
+    long count();
 }
