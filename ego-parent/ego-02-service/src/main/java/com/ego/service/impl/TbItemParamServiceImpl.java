@@ -47,10 +47,11 @@ public class TbItemParamServiceImpl implements TbItemParamService {
     @Override
     public EasyUIPageVO list(int pageNum, int pageSize) {
         EasyUIPageVO easyUIPageVO = new EasyUIPageVO();
+        int startPage = (pageNum -1) * pageSize;
         /**
          * 数据集
          */
-        List<TbItemParam> rows = tbItemParamMapper.selectItemPageList(pageNum, pageSize);
+        List<TbItemParam> rows = tbItemParamMapper.selectItemPageList(startPage, pageSize);
         easyUIPageVO.setRows(rows);
         /**
          * 总条数

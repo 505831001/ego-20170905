@@ -1,5 +1,6 @@
 package com.ego.service.impl;
 
+import com.ego.entity.EasyUIPageVO;
 import com.ego.entity.TbItem;
 import com.ego.entity.TbItemDesc;
 import com.ego.mapper.TbItemMapper;
@@ -43,9 +44,20 @@ public class TbItemServiceImpl implements TbItemService {
      * @return
      */
     @Override
-    public List<TbItem> list(int pageNum, int pageSize) {
-        List<TbItem> itemPageList = tbItemMapper.selectItemPageList(pageNum, pageSize);
-        return itemPageList;
+    public EasyUIPageVO list(int pageNum, int pageSize) {
+        EasyUIPageVO easyUIPageVO = new EasyUIPageVO();
+        int startPage = (pageNum -1) * pageSize;
+        /**
+         * 数据集
+         */
+        List<TbItem> rows = tbItemMapper.selectItemPageList(startPage, pageSize);
+        easyUIPageVO.setRows(rows);
+        /**
+         * 总条数
+         */
+        long count = tbItemMapper.count();
+        easyUIPageVO.setTotal(count);
+        return easyUIPageVO;
     }
 
     /**

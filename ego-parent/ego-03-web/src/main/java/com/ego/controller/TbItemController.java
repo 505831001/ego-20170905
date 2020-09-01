@@ -1,5 +1,6 @@
 package com.ego.controller;
 
+import com.ego.entity.EasyUIPageVO;
 import com.ego.entity.TbItem;
 import com.ego.service.TbItemService;
 import com.github.pagehelper.PageInfo;
@@ -38,9 +39,9 @@ public class TbItemController {
             @ApiImplicitParam(name = "rows", value = "每页条数", required = false, dataType = "int", paramType = "query")
     })
     @ApiResponse(code = 200, message = "返回码:0-失败,1-成功", response = TbItem.class)
-    public List<TbItem> list(@RequestParam(value = "page", defaultValue = "0") int pageNum,
+    public EasyUIPageVO list(@RequestParam(value = "page", defaultValue = "0") int pageNum,
                              @RequestParam(value = "rows", defaultValue = "10") int pageSize) {
-        List<TbItem> list = tbItemService.list(pageNum, pageSize);
+        EasyUIPageVO list = tbItemService.list(pageNum, pageSize);
         return list;
     }
 

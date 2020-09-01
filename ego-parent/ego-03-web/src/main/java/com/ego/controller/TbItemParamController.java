@@ -26,7 +26,7 @@ public class TbItemParamController {
     @Autowired
     protected TbItemParamService tbItemParamService;
 
-    // http://localhost:8080/item/param/list?page=1&rows=30
+    // http://localhost:8080/item/param/list?page=1&rows=10
     @ApiOperation(value = "查询商品规则参数", notes = "分页查询商品规则参数列表")
     @RequestMapping(value = "/item/param/list", method = RequestMethod.GET)
     @ResponseBody
