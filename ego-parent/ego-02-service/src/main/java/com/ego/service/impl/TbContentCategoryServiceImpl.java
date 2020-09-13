@@ -1,7 +1,12 @@
 package com.ego.service.impl;
 
+import com.ego.entity.TbContentCategory;
+import com.ego.mapper.TbContentCategoryMapper;
 import com.ego.service.TbContentCategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -14,4 +19,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class TbContentCategoryServiceImpl implements TbContentCategoryService {
 
+    @Autowired
+    private TbContentCategoryMapper tbContentCategoryMapper;
+
+    @Override
+    public List<TbContentCategory> list() {
+        List<TbContentCategory> list = tbContentCategoryMapper.selectAll();
+        return list;
+    }
 }

@@ -43,10 +43,9 @@ public class MPAutoGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel); // 数据库表名映射到实体的命名策略
         // strategy.setInclude("employees", "departments", "countries"); // 生成的表Oracle
         strategy.setInclude(
-                "ls_customer_level",
-                "ls_marketing",
-                "ls_marketing_second_discount",
-                "ls_system_setting"); // 生成的表Mysql
+                "ls_coupon",
+                "ls_sku_marketing",
+                "ls_marketing_relevant_coupon"); // 生成的表Mysql
         // 4. 包名策略配置
         PackageConfig packages = new PackageConfig();
         packages.setParent("com.liuweiwei");

@@ -23,7 +23,7 @@ public interface TbItemCatMapper {
 
     List<TbItemCat> selectAll();
 
-    TbItemCat selectByPrimaryKey(Long id);
+    TbItemCat selectByPrimaryKey(@Param(value = "id") Long id);
 
     int updateByExampleSelective(@Param("record") TbItemCat record, @Param("example") TbItemCat example);
 

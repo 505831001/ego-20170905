@@ -129,22 +129,38 @@
     </select>
 
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-        delete from tb_item_param
-        where id = #{id,jdbcType=BIGINT}
+        DELETE FROM tb_item_param
+        WHERE id = #{id,jdbcType=BIGINT}
     </delete>
 
     <delete id="deleteByExample" parameterType="com.ego.entity.TbItemParam">
-        delete from tb_item_param
+        DELETE FROM tb_item_param
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
 
+    <delete id="deleteBatch" parameterType="java.lang.Long">
+        DELETE FROM tb_item_param
+        WHERE id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id,jdbcType=BIGINT}
+        </foreach>
+    </delete>
+
     <insert id="insert" parameterType="com.ego.entity.TbItemParam">
-    insert into tb_item_param (id, item_cat_id, created, 
-      updated, param_data)
-    values (#{id,jdbcType=BIGINT}, #{itemCatId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
-      #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
+        INSERT INTO tb_item_param (
+            item_cat_id,
+            created,
+            updated,
+            param_data
+        )
+        VALUES (
+            #{itemCatId,jdbcType=BIGINT},
+            #{created,jdbcType=TIMESTAMP},
+            #{updated,jdbcType=TIMESTAMP},
+            #{paramData,jdbcType=LONGVARCHAR}
+        )
     </insert>
 
     <insert id="insertSelective" parameterType="com.ego.entity.TbItemParam">

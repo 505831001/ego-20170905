@@ -11,21 +11,17 @@ import org.apache.ibatis.annotations.Param;
 public interface TbItemParamMapper {
     long countByExample(TbItemParam example);
 
-    int deleteByExample(TbItemParam example);
-
-    int deleteByPrimaryKey(Long id);
+    long count();
 
     int insert(TbItemParam record);
 
     int insertSelective(TbItemParam record);
 
-    List<TbItemParam> selectByExampleWithBLOBs(TbItemParam example);
+    int deleteByExample(TbItemParam example);
 
-    List<TbItemParam> selectByExample(TbItemParam example);
+    int deleteByPrimaryKey(Long id);
 
-    List<TbItemParam> selectItemPageList(@Param("pageNum") int pageNum, @Param("pageSize") int pageSize);
-
-    TbItemParam selectByPrimaryKey(Long id);
+    int deleteBatch(Long[] ids);
 
     int updateByExampleSelective(@Param("record") TbItemParam record, @Param("example") TbItemParam example);
 
@@ -39,7 +35,13 @@ public interface TbItemParamMapper {
 
     int updateByPrimaryKey(TbItemParam record);
 
+    List<TbItemParam> selectByExampleWithBLOBs(TbItemParam example);
+
+    List<TbItemParam> selectByExample(TbItemParam example);
+
+    List<TbItemParam> selectItemPageList(@Param("pageNum") int pageNum, @Param("pageSize") int pageSize);
+
     List<TbItemParam> selectAll();
 
-    long count();
+    TbItemParam selectByPrimaryKey(Long id);
 }

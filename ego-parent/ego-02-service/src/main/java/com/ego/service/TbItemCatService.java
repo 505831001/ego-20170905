@@ -1,5 +1,6 @@
 package com.ego.service;
 
+import com.ego.entity.EasyResult;
 import com.ego.entity.TbItemCat;
 
 import java.util.List;
@@ -14,4 +15,6 @@ import java.util.List;
  */
 public interface TbItemCatService {
     public List<TbItemCat> list();
+
+    EasyResult query(Long catId);
 }

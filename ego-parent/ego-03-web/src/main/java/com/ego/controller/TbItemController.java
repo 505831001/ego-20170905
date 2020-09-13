@@ -18,6 +18,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
+ * Content Management System - 网站系统又名网站CMS系统，主要用途是为了节约网站开发的成本而开发的建站系统。
+ * <p>
+ * 商品表 控制器类
+ * </p>
+ *
  * @author liuweiwei
  * @since 2020-8-15
  */
@@ -119,7 +124,7 @@ public class TbItemController {
     // http://localhost:8848/item/save
     @RequestMapping(value = "/item/save")
     @ApiOperation(value = "新增物料", notes = "商品:cid,title,sellPoint,priceView,price,num,barcode,image,desc,itemParams")
-    public Integer save(@RequestBody TbItem item,@RequestParam String desc) {
+    public Integer save(@RequestBody TbItem item, @RequestParam String desc) {
         int status = 0;
         try {
             status = tbItemService.save(item, desc);

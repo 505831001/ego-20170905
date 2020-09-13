@@ -1,5 +1,6 @@
 package com.ego.service;
 
+import com.ego.entity.EasyResult;
 import com.ego.entity.EasyUIPageVO;
 import com.ego.entity.TbItemParam;
 
@@ -15,5 +16,10 @@ import java.util.List;
  */
 public interface TbItemParamService {
     public List<TbItemParam> query();
+
     public EasyUIPageVO list(int pageNum, int pageSize);
+
+    EasyResult save(TbItemParam record);
+
+    public int deleteBatch(Long[] ids);
 }
