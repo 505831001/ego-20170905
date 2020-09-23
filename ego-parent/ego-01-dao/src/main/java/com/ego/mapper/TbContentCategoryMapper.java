@@ -31,5 +31,5 @@ public interface TbContentCategoryMapper {
 
     int updateByPrimaryKey(TbContentCategory record);
 
-    List<TbContentCategory> selectAll();
+    List<TbContentCategory> selectAll(@Param("parentId") Long id);
 }

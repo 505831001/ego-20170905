@@ -38,4 +38,14 @@
         <filter-name>encoding</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <!-- java解决请求跨域的两种方法 -->
+    <filter>
+        <filter-name>CorsFilter</filter-name>
+        <filter-class>com.ego.web.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CorsFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
 </web-app>

@@ -1,5 +1,6 @@
 package com.ego.test;
 
+import com.ego.entity.EasyUIPageVO;
 import com.ego.entity.TbItem;
 import com.ego.mapper.TbItemMapper;
 import com.ego.service.TbItemService;
@@ -34,9 +35,7 @@ public class TbItemServiceTest {
     public void getPageTbUserServiceTest() {
         int pageNum  = 0;
         int pageSize = 10;
-        List<TbItem> list = tbItemService.list(pageNum, pageSize);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).toString());
-        }
+        EasyUIPageVO list = tbItemService.list(pageNum, pageSize);
+        System.out.println(list.toString());
     }
 }

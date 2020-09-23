@@ -1,5 +1,6 @@
 package com.ego.service;
 
+import com.ego.entity.EasyUITree;
 import com.ego.entity.TbContentCategory;
 
 import java.util.List;
@@ -13,5 +14,5 @@ import java.util.List;
  * @since 2020-05-19
  */
 public interface TbContentCategoryService {
-    List<TbContentCategory> list();
+    List<EasyUITree> list(Long id);
 }
