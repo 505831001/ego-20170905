@@ -15,8 +15,12 @@
     <!-- 扫描注解 -->
     <context:component-scan base-package="com.ego.controller, com.ego.config"></context:component-scan>
 
+    <!-- <xsd:documentation source="java:org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler"> -->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+
     <!-- 注解驱动 -->
-    <!-- org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter -->
+    <!-- <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" /> -->
+    <!-- <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" /> -->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
             <!-- 配置Fastjson支持 -->
@@ -38,8 +42,6 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-    <!-- org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler -->
-    <mvc:default-servlet-handler></mvc:default-servlet-handler>
 
     <!-- 全局的跨域访问配置
     <mvc:cors>
@@ -80,5 +82,7 @@
             <bean class="com.ego.intercept.MvcInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+
+    <!-- <mvc:view-controller path="viewController" view-name="login"></mvc:view-controller> -->
 
 </beans>
