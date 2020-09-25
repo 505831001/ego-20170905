@@ -24,6 +24,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-test:4.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.47" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.4" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />

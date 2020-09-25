@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ego-03-web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e95f597-92ef-4c11-9387-1a29e9159b36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ego_03_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ego_03_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\JetBrains\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1hfnPU4VKkJ5dF0Yq0X3Fw2fkWZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ego-parent/ego-03-web/src/main/webapp/WEB-INF/jsp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24827586" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-01-dao\src\main\resources" />
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-02-service\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ego.test" />
+      <recent name="com.ego.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-03-web\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-01-dao\src\main\java\com\ego\entity" />
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-02-service\src\main\java\com\ego\utils" />
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-03-web\src\main\webapp" />
+      <recent name="D:\workspace-idea\ego-20170905\ego-parent\ego-01-dao\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.911">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbItemParamServiceTest.getTbItemMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ego-03-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ego.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ego.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ego.test.TbItemParamServiceTest" />
+      <option name="METHOD_NAME" value="getTbItemMapperTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbItemParamServiceTest.getTbItemServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ego-03-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ego.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ego.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ego.test.TbItemParamServiceTest" />
+      <option name="METHOD_NAME" value="getTbItemServiceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbItemServiceTest.getPageTbUserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ego-03-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ego.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ego.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ego.test.TbItemServiceTest" />
+      <option name="METHOD_NAME" value="getPageTbUserMapperTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbItemServiceTest.getPageTbUserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ego-02-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ego.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ego.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ego.test.TbItemServiceTest" />
+      <option name="METHOD_NAME" value="getPageTbUserServiceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbUserServiceTest.springConnectDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ego-02-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ego.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ego.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ego.test.TbUserServiceTest" />
+      <option name="METHOD_NAME" value="springConnectDBTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 7.0.911" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.911" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ego-03-web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_911_ego-20170905" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53504" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ego-03-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.911" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_ego-20170905" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53504" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TbItemParamServiceTest.getTbItemServiceTest" />
+        <item itemvalue="JUnit.TbItemParamServiceTest.getTbItemMapperTest" />
+        <item itemvalue="JUnit.TbItemServiceTest.getPageTbUserMapperTest" />
+        <item itemvalue="JUnit.TbItemServiceTest.getPageTbUserServiceTest" />
+        <item itemvalue="JUnit.TbUserServiceTest.springConnectDBTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e95f597-92ef-4c11-9387-1a29e9159b36" name="Default Changelist" comment="" />
+      <created>1589812442947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589812442947</updated>
+      <workItem from="1589812445485" duration="2165000" />
+      <workItem from="1589814910360" duration="364000" />
+      <workItem from="1589891356437" duration="2460000" />
+      <workItem from="1589895554013" duration="38000" />
+      <workItem from="1589895647008" duration="8578000" />
+      <workItem from="1589979850046" duration="8571000" />
+      <workItem from="1590219612357" duration="2084000" />
+      <workItem from="1590319222502" duration="5771000" />
+      <workItem from="1590412596119" duration="602000" />
+      <workItem from="1590582533648" duration="8400000" />
+      <workItem from="1590591183990" duration="1527000" />
+      <workItem from="1590812636427" duration="12295000" />
+      <workItem from="1590828838847" duration="3400000" />
+      <workItem from="1590895904717" duration="8943000" />
+      <workItem from="1590910070941" duration="76000" />
+      <workItem from="1590910150199" duration="7358000" />
+      <workItem from="1590918943760" duration="592000" />
+      <workItem from="1590919539615" duration="1270000" />
+      <workItem from="1593057830484" duration="707000" />
+      <workItem from="1593132354585" duration="13050000" />
+      <workItem from="1593916793025" duration="1347000" />
+      <workItem from="1593920328277" duration="117000" />
+      <workItem from="1593936488514" duration="48000" />
+      <workItem from="1594449237648" duration="56000" />
+      <workItem from="1594449641812" duration="5686000" />
+      <workItem from="1594457599607" duration="1596000" />
+      <workItem from="1595292286097" duration="3083000" />
+      <workItem from="1595474824522" duration="256000" />
+      <workItem from="1595475087165" duration="228000" />
+      <workItem from="1595475322250" duration="2117000" />
+      <workItem from="1595486455896" duration="1741000" />
+      <workItem from="1595562055884" duration="99000" />
+      <workItem from="1595750447331" duration="4892000" />
+      <workItem from="1595810353114" duration="29000" />
+      <workItem from="1595904586001" duration="267000" />
+      <workItem from="1595904860698" duration="1270000" />
+      <workItem from="1595917599865" duration="1548000" />
+      <workItem from="1595922119707" duration="112000" />
+      <workItem from="1595922236991" duration="915000" />
+      <workItem from="1596072193473" duration="343000" />
+      <workItem from="1596072542223" duration="331000" />
+      <workItem from="1596076152110" duration="5221000" />
+      <workItem from="1596098029761" duration="1623000" />
+      <workItem from="1596100503047" duration="127000" />
+      <workItem from="1596103753924" duration="334000" />
+      <workItem from="1596157877070" duration="362000" />
+      <workItem from="1596164851777" duration="352000" />
+      <workItem from="1596185089207" duration="339000" />
+      <workItem from="1596422442633" duration="33000" />
+      <workItem from="1596422500493" duration="823000" />
+      <workItem from="1596424896136" duration="596000" />
+      <workItem from="1596531600492" duration="190000" />
+      <workItem from="1596676331495" duration="329000" />
+      <workItem from="1596679740579" duration="14000" />
+      <workItem from="1596851425141" duration="2007000" />
+      <workItem from="1596855728102" duration="257000" />
+      <workItem from="1596855987893" duration="13801000" />
+      <workItem from="1596958462019" duration="7887000" />
+      <workItem from="1597019923382" duration="1455000" />
+      <workItem from="1597027516648" duration="31000" />
+      <workItem from="1597027653807" duration="312000" />
+      <workItem from="1597028525524" duration="32000" />
+      <workItem from="1597130811862" duration="16000" />
+      <workItem from="1597215229104" duration="205000" />
+      <workItem from="1597215822095" duration="612000" />
+      <workItem from="1597218517126" duration="10000" />
+      <workItem from="1597218743306" duration="11000" />
+      <workItem from="1597226404988" duration="196000" />
+      <workItem from="1597226606872" duration="22000" />
+      <workItem from="1597226633554" duration="154000" />
+      <workItem from="1597226792645" duration="724000" />
+      <workItem from="1597279122701" duration="2991000" />
+      <workItem from="1597301114304" duration="3573000" />
+      <workItem from="1597308491324" duration="3193000" />
+      <workItem from="1597366974357" duration="452000" />
+      <workItem from="1597458254720" duration="1167000" />
+      <workItem from="1597478776337" duration="3058000" />
+      <workItem from="1597490235674" duration="1445000" />
+      <workItem from="1597559315109" duration="77000" />
+      <workItem from="1597564506820" duration="11000" />
+      <workItem from="1597565346288" duration="1381000" />
+      <workItem from="1597625018013" duration="572000" />
+      <workItem from="1597625855447" duration="7000" />
+      <workItem from="1597626960641" duration="688000" />
+      <workItem from="1597631166485" duration="441000" />
+      <workItem from="1597731230855" duration="54000" />
+      <workItem from="1597807968899" duration="475000" />
+      <workItem from="1597894438444" duration="179000" />
+      <workItem from="1597894625964" duration="96000" />
+      <workItem from="1597894726828" duration="194000" />
+      <workItem from="1597894926093" duration="68000" />
+      <workItem from="1597903242602" duration="193000" />
+      <workItem from="1597905027737" duration="47000" />
+      <workItem from="1597917643331" duration="2261000" />
+      <workItem from="1597979945359" duration="29000" />
+      <workItem from="1598511835527" duration="370000" />
+      <workItem from="1598515422347" duration="4000" />
+      <workItem from="1598517353947" duration="5000" />
+      <workItem from="1598578877003" duration="1224000" />
+      <workItem from="1598665568263" duration="658000" />
+      <workItem from="1598754114969" duration="7747000" />
+      <workItem from="1598762440023" duration="1739000" />
+      <workItem from="1598855212604" duration="3011000" />
+      <workItem from="1598859262452" duration="4723000" />
+      <workItem from="1598920901384" duration="3358000" />
+      <workItem from="1598930791416" duration="15000" />
+      <workItem from="1599127623052" duration="36000" />
+      <workItem from="1599356196920" duration="12910000" />
+      <workItem from="1599396915537" duration="3319000" />
+      <workItem from="1599439370685" duration="16000" />
+      <workItem from="1599813373509" duration="6000" />
+      <workItem from="1599982093154" duration="13239000" />
+      <workItem from="1600410992372" duration="163000" />
+      <workItem from="1600412074219" duration="461000" />
+      <workItem from="1600414149029" duration="1077000" />
+      <workItem from="1600843531803" duration="5424000" />
+      <workItem from="1600851899103" duration="1605000" />
+      <workItem from="1600860308133" duration="5000" />
+      <workItem from="1601019104963" duration="2000000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(Ego Shop): MyBatis Spring SpringMVC&#10;&#10;liuweiwei">
+      <created>1597458699786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597458699786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(Ego Shop): MyBatis Spring SpringMVC&#10;&#10;liuweiwei">
+      <created>1597459379878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597459379878</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(Ego Shop): MyBatis Spring SpringMVC">
+      <created>1598923016850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598923016850</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(Ego Shop): MyBatis Spring SpringMVC">
+      <created>1598924394065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598924394065</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(Ego Shop): Content Management System - 网站系统又名网站CMS系统，主要用途是为了节约网站开发的成本而开发的建站系统。">
+      <created>1599993915443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599993915443</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(SpringMVC Interceptor): 基于xml配置文档形式SpringMVC拦截器HandlerInterceptor">
+      <created>1600849955992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600849955992</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(SpringMVC Interceptor): 基于xml配置文档形式SpringMVC拦截器HandlerInterceptor">
+      <created>1601021970601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601021970601</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TbItemServiceTest_getPageTbUserMapperTest - 2020.08.31 at 15h 54m 07s.xml">
+      <configuration name="TbItemServiceTest.getPageTbUserMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemMapperTest - 2020.08.31 at 15h 57m 31s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 15h 57m 54s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 17h 23m 35s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 17h 52m 26s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 17h 57m 44s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 18h 02m 32s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 18h 06m 43s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.08.31 at 18h 08m 21s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbItemParamServiceTest_getTbItemServiceTest - 2020.09.01 at 08h 50m 18s.xml">
+      <configuration name="TbItemParamServiceTest.getTbItemServiceTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(Ego Shop): MyBatis Spring SpringMVC&#10;&#10;liuweiwei" />
+    <MESSAGE value="feat(Ego Shop): MyBatis Spring SpringMVC" />
+    <MESSAGE value="feat(Ego Shop): Content Management System - 网站系统又名网站CMS系统，主要用途是为了节约网站开发的成本而开发的建站系统。" />
+    <MESSAGE value="feat(SpringMVC Interceptor): 基于xml配置文档形式SpringMVC拦截器HandlerInterceptor" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(SpringMVC Interceptor): 基于xml配置文档形式SpringMVC拦截器HandlerInterceptor" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1600847219021">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600847219021" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1601021969242">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601021969242" />
+    <state width="932" height="289" key="GridCell.Tab.0.bottom" timestamp="1600853504472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600853504472" />
+    <state width="932" height="289" key="GridCell.Tab.0.center" timestamp="1600853504471">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600853504471" />
+    <state width="932" height="289" key="GridCell.Tab.0.left" timestamp="1600853504471">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600853504471" />
+    <state width="932" height="289" key="GridCell.Tab.0.right" timestamp="1600853504472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600853504472" />
+    <state width="932" height="289" key="GridCell.Tab.1.bottom" timestamp="1600853504473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600853504473" />
+    <state width="932" height="289" key="GridCell.Tab.1.center" timestamp="1600853504472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600853504472" />
+    <state width="932" height="289" key="GridCell.Tab.1.left" timestamp="1600853504472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600853504472" />
+    <state width="932" height="289" key="GridCell.Tab.1.right" timestamp="1600853504473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600853504473" />
+    <state width="932" height="289" key="GridCell.Tab.2.bottom" timestamp="1600853504474">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600853504474" />
+    <state width="932" height="289" key="GridCell.Tab.2.center" timestamp="1600853504473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1600853504473" />
+    <state width="932" height="289" key="GridCell.Tab.2.left" timestamp="1600853504473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1600853504473" />
+    <state width="932" height="289" key="GridCell.Tab.2.right" timestamp="1600853504474">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="932" height="289" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1600853504474" />
+    <state x="365" y="65" key="RollbackChangesDialog" timestamp="1600411044968">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="365" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600411044968" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601021972738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601021972738" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ego-03-web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (ego-04-generator)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ego-parent</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24827586" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
