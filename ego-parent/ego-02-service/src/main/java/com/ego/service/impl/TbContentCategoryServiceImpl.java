@@ -26,6 +26,32 @@ public class TbContentCategoryServiceImpl implements TbContentCategoryService {
     private TbContentCategoryMapper tbContentCategoryMapper;
 
     @Override
+    public int insert(TbContentCategory record) {
+        int index = tbContentCategoryMapper.insert(record);
+        return index;
+    }
+
+    @Override
+    public int delete(TbContentCategory example) {
+        int index = tbContentCategoryMapper.deleteByExample(example);
+        return index;
+    }
+
+    @Override
+    public int update(TbContentCategory record) {
+        int index = tbContentCategoryMapper.updateByPrimaryKey(record);
+        return index;
+    }
+
+    @Override
+    public List<TbContentCategory> getByPrimaryKey(long id) {
+        TbContentCategory contentCategory = new TbContentCategory();
+        contentCategory.setId(id);
+        List<TbContentCategory> list = tbContentCategoryMapper.selectByExample(contentCategory);
+        return list;
+    }
+
+    @Override
     public List<EasyUITree> list(Long id) {
         List<EasyUITree> list = new LinkedList<>();
         List<TbContentCategory> data = tbContentCategoryMapper.selectAll(0L);

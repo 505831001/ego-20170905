@@ -83,4 +83,6 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
+    <!-- <mvc:view-controller path="viewController" view-name="login"></mvc:view-controller> -->
+
 </beans>

@@ -1,5 +1,8 @@
 package com.ego.test;
 
+/**
+ * @author Administrator
+ */
 public class ArraySort implements Runnable {
 
     private int number;
