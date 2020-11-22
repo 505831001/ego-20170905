@@ -5,6 +5,7 @@ import com.ego.entity.TbContentCategory;
 import com.ego.service.TbContentCategoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,7 @@ import java.util.List;
  * @since 2020-05-19
  */
 @Controller
+@Slf4j
 @Api(tags = "用户管理相关接口", description = "TbContentCategoryController")
 public class TbContentCategoryController {
     /**

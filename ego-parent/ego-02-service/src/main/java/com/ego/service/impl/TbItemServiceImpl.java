@@ -11,6 +11,7 @@ import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,6 +29,7 @@ import java.util.List;
  */
 @Service
 public class TbItemServiceImpl implements TbItemService {
+
     /**
      * SLF4J 狂人必备日志技能
      */
@@ -51,11 +53,17 @@ public class TbItemServiceImpl implements TbItemService {
          * 数据集
          */
         List<TbItem> rows = tbItemMapper.selectItemPageList(startPage, pageSize);
+        for (TbItem tbItem : rows) {
+            System.out.println("查询物料：" + tbItem.toString());
+        }
+        LOGGER.info("分页查询物料：startPage:{}, pageSize:{}");
         easyUIPageVO.setRows(rows);
         /**
          * 总条数
          */
         long count = tbItemMapper.count();
+        System.out.println("总条数：" + count);
+        LOGGER.info("查询物料总条数：");
         easyUIPageVO.setTotal(count);
         return easyUIPageVO;
     }

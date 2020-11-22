@@ -4,6 +4,7 @@ import com.ego.entity.EasyUITree;
 import com.ego.entity.TbContentCategory;
 import com.ego.mapper.TbContentCategoryMapper;
 import com.ego.service.TbContentCategoryService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ import java.util.List;
  * @since 2020-05-19
  */
 @Service
+@Slf4j
 public class TbContentCategoryServiceImpl implements TbContentCategoryService {
 
     @Autowired
